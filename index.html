@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>NYSL Home Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></application>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="">Login</a></li>
+        <li><a href="">Team's Events</a></li>
+        <li><a href=""> Contact Coach</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <table>
+      <thead class="centered">
+        <tr>
+          <td class="small-text" colspan="4">
+            (Tap on locations for map)
+          </td>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Teams</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody id="app1">
+        <tr v-for="match in matches">
+          <td class="centered">{{match.dateM}}</td>
+          <td class="rightA">{{match.time}}</td>
+          <td class="centered">{{match.teamA + "/" + match.teamB}}</td>
+          <td> <a href="#" onclick=clickaction(this) v-bind:id="match.location">{{match.location}} Elementary</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="app3"></div>
+  </div>
+  <footer><br>(&copy;2019) by Regina - Full Stack Team</footer>
+  <script src="js/JSON.js"></script>
+  <script src="js/js.js"></script>
+
+</body>
+
+</html>
