@@ -89,7 +89,7 @@ nav {
 
 nav ul {
 	padding: .7em;
-	float: right;
+	float: left;
 	list-style: none;
 	background: #444;
 	background: rgba(0, 0, 0, .2);
