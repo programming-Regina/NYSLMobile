@@ -59,9 +59,12 @@ function clickaction(b) {
 	})
 	showMap();
 }
-console.log(app3.location);
 
 function showMap() {
 	document.getElementById('app3').style.display = 'inline-block';
 	document.getElementById('app3').innerHTML = app3.location + '<br>' + app3.address + '<br><iframe src=\"' + app3.url + '"\ width = 100% height = 80% style="border:1px" allowfullscreen name="iframe1"></iframe>';
+}
+
+function contactCoach(){
+  document.getElementById('app3').style.display = 'inline-block';
 }
