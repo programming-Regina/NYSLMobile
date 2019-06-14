@@ -5,28 +5,34 @@ body {
   background-size: cover;
   font-family: "Verdana", Verdana, sans-serif;
 }
+
 button,
 thead,
 .small-text {
   color: white;
 }
+
 #logo {
   margin-right: 5px
 }
+
 td,
 a {
   color: black
 }
+
 table {
   background-image: linear-gradient(limeGreen, white, limeGreen);
   background-blend-mode: darken;
   border-collapse: collapse;
   border: black solid 1px;
   width: auto;
+  overflow: scroll;
   margin-right: auto;
   margin-left: auto;
   display: inline-block
 }
+
 iframe,
 .centered {
   text-align: center;
@@ -41,31 +47,38 @@ footer {
 td {
   padding: 8px;
 }
+
 tr {
   border-bottom: solid black 1px;
 }
+
 thead {
   background: black;
 }
+
 p {
   font-size: 18px;
   font-weight: bold
 }
+
 a {
   text-decoration: none;
 }
+
 .small-text,
 footer {
   font-size: 11px;
   padding: 0px
 }
+
 footer {
   font-size: 11px;
 }
+
 #app3,
 #app2 {
   display: inline-flex;
-  width: 90%;
+  width: auto;
   background-color: white;
   border: black solid 1px;
   border-radius: 8px;
@@ -75,9 +88,15 @@ footer {
   margin-right: 10px;
   opacity: 0.9
 }
+
+#app2 {
+  overflow: scroll;
+}
+
 .bold {
   font-weight: bold
 }
+
 .container2 {
   display: flex;
   justify-content: space-around;
@@ -85,6 +104,7 @@ footer {
   flex-wrap: wrap;
   opacity: 0.8;
 }
+
 .no-border,
 .no-border td {
   border: white solid 1px;

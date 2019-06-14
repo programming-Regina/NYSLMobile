@@ -51,7 +51,7 @@ function showMap() {
   document.getElementById('app3').style.display = 'inline-block';
   var cadena1 = '<div class=\"centered\"> Date: ' + app3.dateM + '<br>Time: ' + app3.time + '<br><h3>' + app3.teamA + ' vs ' + app3.teamB + '</h3></div><br>';
   var cadena2 = app3.location + ' Elementary<br>' + app3.address + '<br><iframe src=\"' + app3.url + '"\ style=\"border:1px\" width=\"100%\" allowfullscreen name=\"iframe1\"></iframe>';
-  var share = "<br><a href=\"whatsapp://send?text=Match info: Date: " + app3.dateM + " at " + app3.time + " / Match: " + app3.teamA + ' vs ' + app3.teamB + " / Place: " + app3.location + " Elementary / Address: " + app3.address + "\"data-action=\"share/whatsapp/share\"><img border=\"0\" src=\"img/wa.png\" width=\"32px\" height=\"32px\"> Share on Whatsapp</a><br><br>";
+  var share = "<br><a href=\"whatsapp://send?text=Game info: Date: " + app3.dateM + " at " + app3.time + " / Teams: " + app3.teamA + ' vs ' + app3.teamB + " / Place: " + app3.location + " Elementary / Address: " + app3.address + "\"data-action=\"share/whatsapp/share\"><img border=\"0\" src=\"img/wa.png\" width=\"32px\" height=\"32px\"> Share on Whatsapp</a><br><br>";
   document.getElementById('app3').innerHTML = cadena1 + share + cadena2;
 }
 
