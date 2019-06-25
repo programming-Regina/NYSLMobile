@@ -1,7 +1,7 @@
 document.getElementById('app3').style.display = 'none';
 var match = [];
-var app1 = new Vue({
-  el: '#app1',
+var tablaPartidos = new Vue({
+  el: '#tablaPartidos',
   data: {
     matches: match
   }
@@ -44,11 +44,11 @@ info.forEach(function (valor) {
     address: valor.address,
     url: valor.url
   };
-  app1.matches.push(m);
+  tablaPartidos.matches.push(m);
 });
 
 function clickaction(b) {
-  app1.matches.map(function (valor) {
+  tablaPartidos.matches.map(function (valor) {
     document.getElementById('app3').style.display = 'none';
 console.log(b.id);
     if (valor.location == b.id && valor.id==) {

@@ -3,7 +3,14 @@ body {
   max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   font-family: "Verdana", Verdana, sans-serif;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 button,
@@ -12,13 +19,9 @@ thead,
   color: white;
 }
 
-#logo {
-  margin-right: 5px
-}
-
 td,
 a {
-  color: black
+  color: darkgreen;
 }
 
 table {
@@ -27,13 +30,12 @@ table {
   border-collapse: collapse;
   border: black solid 1px;
   width: auto;
-  overflow: scroll;
-  margin-right: auto;
-  margin-left: auto;
+  overflow: auto hidden;
   display: inline-block
 }
 
 iframe,
+th,
 .centered {
   text-align: center;
   align-content: center;
@@ -75,10 +77,27 @@ footer {
   font-size: 11px;
 }
 
+.container2 {
+  padding-top: 60px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.container2 div {
+  width: auto;
+  height: auto;
+}
+
 #app3,
 #app2 {
   display: inline-flex;
-  width: auto;
   background-color: white;
   border: black solid 1px;
   border-radius: 8px;
@@ -86,23 +105,13 @@ footer {
   margin-top: 15px;
   margin-left: 10px;
   margin-right: 10px;
-  opacity: 0.9
-}
-
-#app2 {
-  overflow: scroll;
+  opacity: 1;
+  justify-content: center;
+  flex-grow: 1 1 auto
 }
 
 .bold {
   font-weight: bold
-}
-
-.container2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  opacity: 0.8;
 }
 
 .no-border,
@@ -110,4 +119,19 @@ footer {
   border: white solid 1px;
   background-image: none;
   background-color: white;
+}
+
+.teamsB {
+  border-radius: 8px;
+  background-color: forestgreen;
+  color: white;
+  padding: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
